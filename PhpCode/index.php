@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['user_name'])) {
-    include './authorization.html';
+    include './form.html';
 } else {
     echo "Здравствуйте, {$_SESSION['user_name']}!"
         . '</br>'
